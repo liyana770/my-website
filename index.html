@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Najwa Personal Page</title>
+	<style>
+		.fa {
+		  padding: 20px;
+		  font-size: 30px;
+		  width: 30px;
+		  text-align: center;
+		  text-decoration: none;
+		  margin: 5px 2px;
+		  border-radius: 50%;
+		}
+
+		.fa:hover {
+			opacity: 0.7;
+		}
+
+		.fa-instagram {
+		  background: #125688;
+		  color: white;
+		}
+
+		.fa-twitter {
+		  background: #55ACEE;
+		  color: white;
+		}
+		
+		.row {
+			display: flex;
+		}
+
+		.column img {
+			width: 90%; 
+			margin: 10px auto;
+			display: block;
+		}
+
+		.desc {
+			text-align: center;
+			padding: 10px;
+			width: 100%;
+			max-width: 600px;
+		}
+
+		a {
+			text-decoration: none;
+		}
+    </style>
+</head>
+<body style="background-image: url('star.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+	
+    <table border="1" align="center" bgcolor="#ffffff" width="900">
+        <tr>
+            <td colspan="7" align="center" bgcolor="#a5c2d1" height="100" style="border: 0;">
+                <h1>Najwa's Personal Website</h1>
+            </td>
+        </tr>
+
+        <tr bgcolor="#ffffff">
+            <td align="center" style="border: 0;" height="30"><a href="index.html">Home</a></td>
+            <td align="center" style="border: 0;" height="30"><a href="biodata.html">Biodata</a></td>
+            <td align="center" style="border: 0;" height="30"><a href="experience.html">Experience</a></td>
+            <td align="center" style="border: 0;" height="30"><a href="education.html">Education</a></td>
+            <td align="center" style="border: 0;" height="30"><a href="family.html">Family</a></td>
+            <td align="center" style="border: 0;" height="30"><a href="gallery.html">Gallery</a></td>
+        </tr>
+		
+        <tr>
+            <td colspan="7" align="center" bgcolor="#f1e9e8" height="300" style="border: 0;">
+                <table border="0" align="center" width="100%">
+                    <tr>
+                        <td align="center" width="70%">
+							<h2><marquee align="center" bgcolor="#47588d" width="300" loop="forever" behavior="alternate">HII WELCOME TO MY PERSONAL PAGE >.></marquee></h2>
+                            <p>Welcome to my personal website! <p>I'm <sub>Nurliyana Najwa</sub> binti <sup>Roslan</sup>
+							<div class="desc">a passionate learner with a love for exploring new ideas and improving my skills. Whether it's diving into technology, expressing creativity, or working on exciting projects, I enjoy embracing challenges and making the most out of every opportunity.
+                            <p>Feel free to browse through my site to learn more about me, my experiences, and my journey.</p></div>
+                            <div>
+                                <a href="https://www.instagram.com/liyanajwaa/profilecard/?igsh=bjZsMzI5Y3dsY3hr" target="_blank" class="fa fa-instagram"></a> 
+								<a href="https://x.com/nlnhirai?t=PPUeZMrc5W9kDTXtOsRsvQ&s=09" target="_blank" class="fa fa-twitter"></a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+		<tr>
+            <td colspan="7" align="center" bgcolor="#ffffff" style="border: 0;">
+                <p><br><strong>Random picture in my gallery</strong></p>
+				<div class="row">
+					<div class="column">
+					<img src="mas.jpg" alt="Snow">
+				</div>
+				
+				<div class="column">
+					<img src="rain.jpg" alt="Forest">
+				</div>
+				
+				<div class="column">
+					<img src="cat.jpg" alt="Mountains">
+				</div>
+				
+				<div class="column">
+					<img src="hp.jpg" alt="Mountains"><br><br>
+				</div>
+				</div>
+			</td>
+        </tr>
+
+		<tr>
+            <td colspan="7" align="center" bgcolor="#ffffff" height="50" style="border: 0;">
+                <p><strong>Quote of the day</strong>
+				<div class="desc">“We now accept the fact that learning is a lifelong process of keeping abreast of change. And the most pressing task is to teach people how to learn.”</p>
+				<p><strong>— Peter Drucker</strong></p></div>
+            </td>
+        </tr>
+
+		<tr>
+            <td colspan="7" align="center" bgcolor="#a5c2d1" height="50" style="border: 0;">
+                <p><a href="#top">Jump to top pages</a></p>
+				<p>&copy; 2024 Najwa. All rights reserved.</p>
+            </td>
+        </tr>
+    </table>
+	
+	<body onload="startTime()">
+
+		<div id="txt" style="color: white;"></div>
+
+		<script>
+		function startTime() {
+		  const today = new Date();
+		  let h = today.getHours();
+		  let m = today.getMinutes();
+		  let s = today.getSeconds();
+		  m = checkTime(m);
+		  s = checkTime(s);
+		  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+		  setTimeout(startTime, 1000);
+		}
+
+		function checkTime(i) {
+		  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+		  return i;
+		}
+		</script>
+	
+</body>
+</html>

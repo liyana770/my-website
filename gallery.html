@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery</title>
+    <style>
+        .gallery-container {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px; 
+			justify-content: center; 
+			margin-top: 20px;
+		}
+
+		.polaroid {
+			flex: 1 1 calc(25% - 20px); /* Each image takes 25% of the row with space for gaps */
+			box-sizing: border-box;
+			border: 1px solid #ccc;
+			background: #fff;
+			padding: 10px;
+			text-align: center;
+		}
+
+		.polaroid img {
+			width: 100%; 
+			height: auto;
+		}
+
+		.desc {
+			font-size: 14px;
+			color: #333;
+			margin-top: 5px;
+		}
+		
+		a{
+			text-decoration:none
+		}	
+		
+    </style>
+</head>
+
+<body style="background-image: url('star.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+    <table border="1" align="center" bgcolor="#ffffff" width="900">
+        <tr>
+            <td colspan="7" align="center" bgcolor="#a5c2d1" height="100" style="border: 0;">
+                <h1>Najwa's Personal Website</h1>
+            </td>
+        </tr>
+
+        <tr bgcolor="#ffffff">
+            <td align="center" style="border: 0;" height="30"><a href="index.html">Home</a></td>
+            <td align="center" style="border: 0;" height="30"><a href="biodata.html">Biodata</a></td>
+            <td align="center" style="border: 0;" height="30"><a href="experience.html">Experience</a></td>
+            <td align="center" style="border: 0;" height="30"><a href="education.html">Education</a></td>
+            <td align="center" style="border: 0;" height="30"><a href="family.html">Family</a></td>
+            <td align="center" style="border: 0;" height="30"><a href="gallery.html">Gallery</a></td>
+        </tr>
+
+        <tr>
+            <td colspan="7" align="center" bgcolor="#f1e9e8" style="border: 0;">
+                <h2>My Gallery</h2>
+            </td>
+        </tr>
+<tr>
+    <td colspan="7" style="border: 0;">
+        <div class="gallery-container">
+            <!-- Image 1 -->
+            <div class="polaroid">
+                <a target="_blank" href="g1.jpg">
+                    <img src="g1.jpg" alt="g1">
+                </a>
+                <div class="desc">Dekan</div>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="polaroid">
+                <a target="_blank" href="g2.jpg">
+                    <img src="g2.jpg" alt="g2">
+                </a>
+                <div class="desc">Class picture</div>
+            </div>
+
+            <!-- Image 3 -->
+            <div class="polaroid">
+                <a target="_blank" href="g3.jpg">
+                    <img src="g3.jpg" alt="g3">
+                </a>
+                <div class="desc">Friends</div>
+            </div>
+
+            <!-- Image 4 -->
+            <div class="polaroid">
+                <a target="_blank" href="g4.jpg">
+                    <img src="g4.jpg" alt="g4">
+                </a>
+                <div class="desc">Hiking with classmate</div>
+            </div>
+
+            <!-- Image 5 -->
+            <div class="polaroid">
+                <a target="_blank" href="g5.jpg">
+                    <img src="g5.jpg" alt="g5">
+                </a>
+                <div class="desc">mirror selfieee</div>
+            </div>
+
+            <!-- Image 6 -->
+            <div class="polaroid">
+                <a target="_blank" href="g6.jpg">
+                    <img src="g6.jpg" alt="g6">
+                </a>
+                <div class="desc">Beach day</div>
+            </div>
+
+            <!-- Image 7 -->
+            <div class="polaroid">
+                <a target="_blank" href="g7.jpg">
+                    <img src="g7.jpg" alt="g7">
+                </a>
+                <div class="desc">ATV</div>
+            </div>
+
+            <!-- Image 8 -->
+            <div class="polaroid">
+                <a target="_blank" href="g8.jpg">
+                    <img src="g8.jpg" alt="g8">
+                </a>
+                <div class="desc">KTM</div>
+            </div>
+			
+			<!-- Image 9 -->
+            <div class="polaroid">
+                <a target="_blank" href="g5.jpg">
+                    <img src="g9.jpg" alt="g5">
+                </a>
+				<div class="desc">PD Library</div>
+            </div>
+
+            <!-- Image 10 -->
+            <div class="polaroid">
+                <a target="_blank" href="g6.jpg">
+                    <img src="g10.jpg" alt="g6">
+                </a>
+				<div class="desc">Friends</div>
+            </div>
+
+            <!-- Image 11 -->
+            <div class="polaroid">
+                <a target="_blank" href="g7.jpg">
+                    <img src="g11.jpg" alt="g7">
+                </a>
+				<div class="desc">PD Library</div>
+            </div>
+
+            <!-- Image 12 -->
+            <div class="polaroid">
+                <a target="_blank" href="g8.jpg">
+                    <img src="g12.jpg" alt="g8">
+                </a>
+				<div class="desc">consult assignment</div>
+            </div>
+			
+			<div style="display: inline-block; margin-right: 20px;">
+					<video width="300" muted controls>
+						<source src="video1.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+				
+			<div style="display: inline-block; margin-right: 20px;">
+					<video width="300" muted controls>
+						<source src="video2.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+        </div>
+    </td>
+</tr>
+
+		<tr>
+            <td colspan="7" align="center" bgcolor="#a5c2d1" height="50" style="border: 0;">
+                <p><a href="#top">Jump to top pages</a></p>
+				<p>&copy; 2024 Najwa. All rights reserved.</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
